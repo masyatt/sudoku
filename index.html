@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover" />
+  <title>모바일 최적화 스도쿠</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app">
+    <header>
+      <h1>스도쿠 (모바일 최적화)</h1>
+      <div class="controls" style="flex:0 0 auto">
+        <button data-level="easy">Easy</button>
+        <button data-level="medium">Medium</button>
+        <button data-level="hard">Hard</button>
+      </div>
+    </header>
+
+    <div class="board-wrap">
+      <div id="board" class="board" aria-label="스도쿠 보드"></div>
+    </div>
+
+    <div class="controls">
+      <button id="btn-new" class="primary">새 게임</button>
+      <button id="btn-check">정답 확인</button>
+      <button id="btn-reset">초기화</button>
+    </div>
+
+    <div class="keypad" aria-label="가상 숫자 키패드">
+      <button data-key="1">1</button>
+      <button data-key="2">2</button>
+      <button data-key="3">3</button>
+      <button data-key="4">4</button>
+      <button data-key="5">5</button>
+      <button data-key="6">6</button>
+      <button data-key="7">7</button>
+      <button data-key="8">8</button>
+      <button data-key="9">9</button>
+      <button data-key="del" class="wide">⌫ 지우기</button>
+    </div>
+
+    <div id="status" class="status"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
